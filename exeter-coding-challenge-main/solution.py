@@ -78,7 +78,7 @@ for element in temp_dict.keys():
     french_wd.append(french_dict[element])
     count.append(temp_dict[element])
 
-end_frame = {'Words-English':english_wd,'Words-French':french_wd,'Count':count}
+end_frame = {'English Word':english_wd,'French Word':french_wd,'Frequency':count}
 dataframe = pandas.DataFrame(end_frame)
 print("Writing the english word, french word equivalent along with count to csv file..")
 dataframe.to_csv(r'./Result/frequency.csv')
